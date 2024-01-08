@@ -34,6 +34,7 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.green,
+      child: const Text("abdo"),
     );
   }
 }
