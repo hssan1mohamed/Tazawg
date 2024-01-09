@@ -3,24 +3,27 @@ import 'package:tazawg/consts.dart';
 import 'package:tazawg/core/utls/styles%20copy.dart';
 
 class TextLogo extends StatelessWidget {
-  const TextLogo({super.key});
-
+  const TextLogo({
+    super.key,
+    this.size = Styles.textStyle30,
+  });
+  final TextStyle size;
   @override
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        const Text(
+        Text(
           "Ta",
-          style: Styles.textStyle30,
+          style: size,
         ),
         Text(
           "Z",
-          style: Styles.textStyle30.copyWith(color: Constant.kprimaryColor),
+          style: size.copyWith(color: Constant.kprimaryColor),
         ),
-        const Text(
+        Text(
           "wag",
-          style: Styles.textStyle30,
+          style: size,
         ),
       ],
     );

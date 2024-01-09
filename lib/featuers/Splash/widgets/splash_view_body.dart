@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tazawg/core/utls/navigate.dart';
 import 'package:tazawg/core/utls/routesApp.dart';
-import 'package:tazawg/core/utls/styles%20copy.dart';
+import 'package:tazawg/featuers/splash/widgets/logo.dart';
 import 'package:tazawg/featuers/splash/widgets/text_logo.dart';
 
 class SplashViewBody extends StatefulWidget {
@@ -25,13 +25,7 @@ class _SplashViewBodyState extends State<SplashViewBody> {
   Widget build(BuildContext context) {
     return const Column(
       mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        CircleAvatar(
-          maxRadius: 60,
-          backgroundColor: Colors.white,
-        ),
-        TextLogo()
-      ],
+      children: [Logo(), TextLogo()],
     );
   }
 }
