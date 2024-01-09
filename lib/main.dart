@@ -26,23 +26,8 @@ class TazawgApp extends StatelessWidget {
           scaffoldBackgroundColor: Constant.kbackgroundcolor,
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
-          textTheme: Typography().white.apply(fontFamily: 'Mukta'),
+          //textTheme: Typography().white.apply(fontFamily: 'Mukta'),
         ),
-      ),
-    );
-  }
-}
-
-class Home extends StatelessWidget {
-  const Home({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
-        color: Colors.blue,
-        height: 50,
-        width: 50,
       ),
     );
   }
