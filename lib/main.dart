@@ -18,14 +18,16 @@ class TazawgApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(
-      routerConfig: RoutesApp.routes,
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark().copyWith(
-        scaffoldBackgroundColor: Constant.kbackgroundcolor,
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-        textTheme: Typography().white.apply(fontFamily: 'Mukta'),
+    return SafeArea(
+      child: MaterialApp.router(
+        routerConfig: RoutesApp.routes,
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData.dark().copyWith(
+          scaffoldBackgroundColor: Constant.kbackgroundcolor,
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          useMaterial3: true,
+          textTheme: Typography().white.apply(fontFamily: 'Mukta'),
+        ),
       ),
     );
   }
