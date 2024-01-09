@@ -14,8 +14,8 @@ class SplashViewBody extends StatefulWidget {
 class _SplashViewBodyState extends State<SplashViewBody> {
   @override
   void initState() {
-    Future.delayed(const Duration(seconds: 4), () {
-      //navigateToPage(context, RoutesApp.kHome);
+    Future.delayed(const Duration(seconds: 3), () {
+      navigateToPage(context, RoutesApp.kAuth);
     });
 
     super.initState();

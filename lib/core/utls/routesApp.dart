@@ -13,11 +13,11 @@ class RoutesApp {
   static final routes = GoRouter(
     routes: [
       GoRoute(
-        path: kSplashView,
+        path: "/",
         builder: (context, state) => const SplashView(),
       ),
       GoRoute(
-        path: '/',
+        path: kAuth,
         builder: (context, state) => const Auth(),
       ),
       GoRoute(
