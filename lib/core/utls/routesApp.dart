@@ -1,8 +1,8 @@
 import 'package:go_router/go_router.dart';
 import 'package:tazawg/featuers/auth/presentation/view/auth.dart';
 import 'package:tazawg/featuers/auth/presentation/view/signIn.dart';
+import 'package:tazawg/featuers/home/presentation/view/home.dart';
 import 'package:tazawg/featuers/splash/views/splash_view.dart';
-import 'package:tazawg/main.dart';
 
 class RoutesApp {
   static const String kSplashView = '/SplashView';
@@ -13,7 +13,7 @@ class RoutesApp {
   static final routes = GoRouter(
     routes: [
       GoRoute(
-        path: "/",
+        path: kSplashView,
         builder: (context, state) => const SplashView(),
       ),
       GoRoute(
@@ -25,7 +25,7 @@ class RoutesApp {
         builder: (context, state) => const SignIn(),
       ),
       GoRoute(
-        path: kHome,
+        path: "/",
         builder: (context, state) => const Home(),
       )
     ],

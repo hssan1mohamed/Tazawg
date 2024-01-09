@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tazawg/core/utls/navigate.dart';
 import 'package:tazawg/core/utls/routesApp.dart';
+
 import 'package:tazawg/featuers/splash/widgets/logo.dart';
 import 'package:tazawg/featuers/splash/widgets/text_logo.dart';
 

@@ -10,8 +10,8 @@ class CustomButtom extends StatelessWidget {
       required this.text,
       this.borderRadius,
       required this.onPressed,
-      this.height = 48,
-      this.width = 200});
+      this.height = 28,
+      this.width = 65});
   final Color backgroundcolor;
   final double height;
   final double width;
@@ -32,11 +32,13 @@ class CustomButtom extends StatelessWidget {
         ),
         child: Text(
           text,
-          style: Styles.textStyle18.copyWith(
-              color: backgroundcolor == Constant.kprimaryColor
-                  ? Colors.white
-                  : Colors.black,
-              fontWeight: FontWeight.bold),
+          style: Styles.textStyle14.copyWith(
+            color: backgroundcolor == Constant.kprimaryColor
+                ? Colors.white
+                : Colors.black,
+            fontWeight: FontWeight.bold,
+            fontSize: 11,
+          ),
         ),
       ),
     );

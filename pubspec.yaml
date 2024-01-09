@@ -70,7 +70,7 @@ flutter:
   fonts:
     - family: Mukta
       fonts:
-        - asset: assets/fonts/Mukta-SemiBold.ttf
+        - asset: assets\fonts\Mukta-Regular.ttf
 
   #
   # For details regarding fonts from package dependencies,
