@@ -1,0 +1,37 @@
+import 'package:flutter/material.dart';
+import 'package:tazawg/core/utls/navigate.dart';
+import 'package:tazawg/core/utls/routesApp.dart';
+import 'package:tazawg/core/utls/styles%20copy.dart';
+import 'package:tazawg/featuers/splash/widgets/text_logo.dart';
+
+class SplashViewBody extends StatefulWidget {
+  const SplashViewBody({super.key});
+
+  @override
+  State<SplashViewBody> createState() => _SplashViewBodyState();
+}
+
+class _SplashViewBodyState extends State<SplashViewBody> {
+  @override
+  void initState() {
+    Future.delayed(const Duration(seconds: 4), () {
+      //navigateToPage(context, RoutesApp.kHome);
+    });
+
+    super.initState();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return const Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        CircleAvatar(
+          maxRadius: 60,
+          backgroundColor: Colors.white,
+        ),
+        TextLogo()
+      ],
+    );
+  }
+}
