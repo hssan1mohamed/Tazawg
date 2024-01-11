@@ -9,28 +9,37 @@ class FoodDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+    return const Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      textDirection: TextDirection.rtl,
       children: [
-        const FoodCart(),
-        const SizedBox(height: 10),
-        const Text(
-          "Food Name",
+        FoodCart(),
+        SizedBox(height: 8),
+        Text(
+          "زاد",
           style: Styles.textStyle16,
         ),
-        const Opacity(
-          opacity: .3,
-          child: Text(
-            "Price",
-            style: Styles.textStyle14,
-          ),
-        ),
-        const SizedBox(height: 6),
-        CustomButtom(
-          backgroundcolor: Constant.kprimaryColor,
-          text: "add cart",
-          onPressed: () {},
-        )
+        // Row(
+        //   mainAxisAlignment: MainAxisAlignment.start,
+        //   textDirection: TextDirection.rtl,
+        //   children: [
+        //     const Opacity(
+        //       opacity: .3,
+        //       child: Text(
+        //         "السعر",
+        //         style: Styles.textStyle14,
+        //       ),
+        //     ),
+        //     const SizedBox(
+        //       width: 16,
+        //     ),
+        //     Text(
+        //       "20" + "ج.م",
+        //       style: Styles.textStyle16.copyWith(color: Constant.kprimaryColor),
+        //     ),
+        //   ],
+        // ),
+        SizedBox(height: 6),
       ],
     );
   }

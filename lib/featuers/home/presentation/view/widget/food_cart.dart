@@ -8,13 +8,18 @@ class FoodCart extends StatelessWidget {
     return Column(
       children: [
         Container(
-          width: 90,
-          height: 80,
-          decoration: const BoxDecoration(
+          width: 100,
+          height: 120,
+          decoration:  const BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.all(
                 Radius.circular(10),
-              )),
+              ),
+          image: DecorationImage(image: NetworkImage(
+                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiRh_gERsbkGxZCg11qNxCMkJbrobpig38uA&usqp=CAU'
+              ,
+          ),fit: BoxFit.fill)
+          ),
         ),
       ],
     );

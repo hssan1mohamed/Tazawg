@@ -5,7 +5,7 @@ import 'package:tazawg/core/utls/styles%20copy.dart';
 class TextLogo extends StatelessWidget {
   const TextLogo({
     super.key,
-    this.size = Styles.textStyle30,
+    this.size = Styles.textStyle50,
   });
   final TextStyle size;
   @override
@@ -14,15 +14,15 @@ class TextLogo extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
-          "Ta",
+          "ق",
           style: size,
         ),
         Text(
-          "Z",
+          "و",
           style: size.copyWith(color: Constant.kprimaryColor),
         ),
         Text(
-          "wag",
+          "تذ",
           style: size,
         ),
       ],

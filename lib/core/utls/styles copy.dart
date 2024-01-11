@@ -18,6 +18,11 @@ abstract class Styles {
     fontWeight: FontWeight.w900,
     letterSpacing: 1.2,
   );
+  static const textStyle50 = TextStyle(
+    fontSize: 50,
+    fontWeight: FontWeight.w900,
+    letterSpacing: 1.2,
+  );
   static const textStyle14 = TextStyle(
     fontSize: 14,
     fontWeight: FontWeight.normal,
