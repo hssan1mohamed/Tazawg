@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tazawg/featuers/home/presentation/view/widget/food_details.dart';
+import 'package:tazawg/featuers/home/presentation/view/widget/home_widget/food_details.dart';
 
 class ListFood extends StatelessWidget {
   const ListFood({super.key});

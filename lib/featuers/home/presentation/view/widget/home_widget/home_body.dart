@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tazawg/featuers/home/presentation/view/widget/Catogary.dart';
-import 'package:tazawg/featuers/home/presentation/view/widget/backgroundimage.dart';
+import 'package:tazawg/featuers/home/presentation/view/widget/home_widget/backgroundimage.dart';
+import 'package:tazawg/featuers/home/presentation/view/widget/home_widget/catogary.dart';
 
 class HomeBody extends StatelessWidget {
   const HomeBody({super.key});
@@ -13,9 +13,9 @@ class HomeBody extends StatelessWidget {
         children: [
           Background(),
           SizedBox(height: 40),
-          Catogary(),
+          Category(),
           SizedBox(height: 40),
-          Catogary(),
+          Category(),
         ],
       ),
     );

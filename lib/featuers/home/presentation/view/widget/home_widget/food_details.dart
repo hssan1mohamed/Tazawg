@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:tazawg/consts.dart';
 import 'package:tazawg/core/utls/styles%20copy.dart';
 import 'package:tazawg/core/widgets/customButton.dart';
-import 'package:tazawg/featuers/home/presentation/view/widget/food_cart.dart';
+import 'package:tazawg/featuers/home/presentation/view/widget/home_widget/food_cart.dart';
 
 class FoodDetails extends StatelessWidget {
   const FoodDetails({super.key});
