@@ -8,7 +8,7 @@ class Logo extends StatelessWidget {
     return CircleAvatar(
       maxRadius: size,
       backgroundColor: Colors.white,
-      child: Image.asset('assets/images/logo.png',fit: BoxFit.fill),
+      backgroundImage:const AssetImage('assets/images/logo.png'),
     );
   }
 }

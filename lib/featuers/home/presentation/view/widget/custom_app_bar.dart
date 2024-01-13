@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:tazawg/core/utls/routesApp.dart';
 import 'package:tazawg/core/utls/styles%20copy.dart';
 
 class CustomAppBar extends StatelessWidget {
@@ -12,7 +14,9 @@ class CustomAppBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           IconButton(
-              onPressed: () {},
+              onPressed: () {
+                GoRouter.of(context).push(RoutesApp.kSearch);
+              },
               icon: const Icon(
                 Icons.search,
                 size: 26,

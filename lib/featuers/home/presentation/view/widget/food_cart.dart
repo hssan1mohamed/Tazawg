@@ -8,8 +8,8 @@ class FoodCart extends StatelessWidget {
     return Column(
       children: [
         Container(
-          width: 100,
-          height: 120,
+          width: MediaQuery.of(context).size.width*0.35 ,
+          height: MediaQuery.of(context).size.height*0.15,
           decoration:  const BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.all(
