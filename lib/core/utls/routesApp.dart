@@ -1,6 +1,10 @@
+import 'package:flutter/src/widgets/basic.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
+import 'package:tazawg/featuers/Menu/data/repo/menu_repo.dart';
+import 'package:tazawg/featuers/Menu/data/repo/menu_repo_imp.dart';
+import 'package:tazawg/featuers/Menu/presentation/controller/menu_cubit/menu_cubit.dart';
 import 'package:tazawg/featuers/Menu/presentation/view/menu_view.dart';
-import 'package:tazawg/featuers/auth/presentation/view/auth.dart';
 import 'package:tazawg/featuers/home/presentation/view/details_restaurant.dart';
 import 'package:tazawg/featuers/home/presentation/view/home.dart';
 import 'package:tazawg/featuers/search/presentation/view/search.dart';
@@ -33,7 +37,11 @@ class RoutesApp {
       ),
       GoRoute(
         path: kMenu,
-        builder: (context, state) => const MenuView(),
+        builder: (context, state) =>
+            BlocProvider(
+              create: (context) => MenuCubit(MenuRepoImp())..getMenu(),
+              child: const MenuView(),
+            ),
       ),
     ],
   );
