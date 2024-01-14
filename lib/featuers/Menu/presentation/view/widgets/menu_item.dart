@@ -1,21 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:tazawg/consts.dart';
 import 'package:tazawg/core/utls/styles%20copy.dart';
+import 'package:tazawg/featuers/Menu/data/model.dart';
 import 'package:tazawg/featuers/home/presentation/view/widget/food_cart.dart';
 
 class MenuItem extends StatelessWidget {
-  const MenuItem({super.key});
-
+  const MenuItem({super.key, required this.menuModel});
+final MenuModel menuModel;
   @override
   Widget build(BuildContext context) {
     return  Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       textDirection: TextDirection.rtl,
       children: [
-        FoodCart(),
-        SizedBox(height: 8),
+        FoodCart(menuModel: menuModel),
+        const SizedBox(height: 8),
         Text(
-          "دجاج مقلى",
+          menuModel.name,
           style: Styles.textStyle16,
         ),
         Padding(
@@ -31,16 +32,16 @@ class MenuItem extends StatelessWidget {
                   style: Styles.textStyle18,
                 ),
               ),
-              Spacer(),
+              const Spacer(),
               Text(
-                "20" + "ج.م",
+               menuModel.price + "  ج.م ",
                 style: Styles.textStyle16.copyWith(color: Constant.kprimaryColor),
               ),
             ],
           ),
         ),
-        Divider(thickness: 2),
-        SizedBox(height: 6),
+        const Divider(thickness: 2),
+       const SizedBox(height: 6),
       ],
     );
   }
