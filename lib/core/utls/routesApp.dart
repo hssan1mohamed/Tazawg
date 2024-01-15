@@ -1,9 +1,10 @@
 import 'package:go_router/go_router.dart';
-import 'package:tazawg/featuers/auth/presentation/view/auth.dart';
-import 'package:tazawg/featuers/home/presentation/view/category_details.dart';
-import 'package:tazawg/featuers/home/presentation/view/home.dart';
-import 'package:tazawg/featuers/search/presentation/view/search.dart';
-import 'package:tazawg/featuers/splash/views/splash_view.dart';
+import 'package:tazawg/features/auth/presentation/view/auth.dart';
+import 'package:tazawg/features/home/data/model/category_model.dart';
+import 'package:tazawg/features/home/presentation/view/category_details.dart';
+import 'package:tazawg/features/home/presentation/view/home.dart';
+import 'package:tazawg/features/search/presentation/view/search.dart';
+import 'package:tazawg/features/splash/views/splash_view.dart';
 
 class RoutesApp {
   static const String kSplashView = '/SplashView';
@@ -15,7 +16,7 @@ class RoutesApp {
   static final routes = GoRouter(
     routes: [
       GoRoute(
-        path: kSplashView,
+        path: "/",
         builder: (context, state) => const SplashView(),
       ),
       GoRoute(
@@ -27,8 +28,10 @@ class RoutesApp {
         builder: (context, state) => const Home(),
       ),
       GoRoute(
-        path: "/",
-        builder: (context, state) => const CategoryDetails(),
+        path: kcategorydetails,
+        builder: (context, state) => CategoryDetails(
+          categoryModel: state.extra as CategoryModel,
+        ),
       ),
       GoRoute(
         path: kSearch,
