@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:tazawg/consts.dart';
 import 'package:tazawg/core/utls/styles%20copy.dart';
 import 'package:tazawg/featuers/Menu/data/model.dart';
 import 'package:tazawg/featuers/Menu/presentation/view/widgets/custom_row_meal.dart';

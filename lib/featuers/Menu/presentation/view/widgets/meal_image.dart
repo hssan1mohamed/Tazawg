@@ -12,19 +12,20 @@ class MealImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 200,
+      height: 250,
       width: double.infinity,
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(16),
-          color: Constant.kprimaryColor,
-          // image: DecorationImage(
-          //     image: NetworkImage(menuModel.image), fit: BoxFit.cover)),
-      ), child: CachedNetworkImage(
-      imageUrl: menuModel.image,
-      fit: BoxFit.fill,
-      placeholder: (context, url) => const CircularProgressIndicator(),
-      errorWidget: (context, url, error) => const Icon(Icons.error),
-    ),
+        borderRadius: BorderRadius.circular(16),
+        color: Constant.kprimaryColor,
+      ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(16),
+        child: CachedNetworkImage(
+          imageUrl: menuModel.image,
+          fit: BoxFit.fill,
+          errorWidget: (context, url, error) => const Icon(Icons.error),
+        ),
+      ),
     );
   }
 }

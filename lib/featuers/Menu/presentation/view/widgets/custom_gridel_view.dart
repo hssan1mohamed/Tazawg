@@ -19,6 +19,7 @@ class CustomGirdelView extends StatelessWidget {
       builder: (context, state) {
         if (state is MenuDoneState) {
           return GridView.builder(
+              physics: const BouncingScrollPhysics(),
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
                 childAspectRatio: 0.85,
