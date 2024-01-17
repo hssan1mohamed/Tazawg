@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tazawg/featuers/home/presentation/view/widget/details_body.dart';
+import 'widget/widgest_details/details_body.dart';
 
 class DetailesRestaurant extends StatelessWidget {
   const DetailesRestaurant({super.key});

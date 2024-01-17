@@ -2,6 +2,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:tazawg/featuers/home/presentation/controller/Imagest_cubit/images_cubit.dart';
+import 'package:tazawg/featuers/home/presentation/controller/Imagest_cubit/images_state.dart';
 
 class Background extends StatefulWidget {
   const Background({super.key});

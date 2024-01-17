@@ -2,8 +2,7 @@ import 'package:bloc/bloc.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:meta/meta.dart';
 import 'package:tazawg/core/utls/api_servces.dart';
-
-part 'images_state.dart';
+import 'package:tazawg/featuers/home/presentation/controller/Imagest_cubit/images_state.dart';
 
 class ImagesCubit extends Cubit<ImagesState> {
   ImagesCubit() : super(ImagesInitial());
@@ -14,9 +13,9 @@ class ImagesCubit extends Cubit<ImagesState> {
     try {
       List<String> Images = [];
       var result = await ApiService().get(endPoint: 'images');
-      result.docs.forEach((element) {
+      for (var element in result.docs) {
         Images.add(element.data()['img']);
-      });
+      }
       print(Images);
       emit(ImagesDone(images: Images));
     } catch (error) {
