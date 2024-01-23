@@ -8,7 +8,6 @@ class ImagesCubit extends Cubit<ImagesState> {
   ImagesCubit() : super(ImagesInitial());
 
   Future getImages() async {
-    print('starttttt');
     emit(ImagesLoading());
     try {
       List<String> Images = [];
