@@ -15,7 +15,6 @@ class Cateogary extends StatelessWidget {
         children: [
           TextDivider(title: title),
           const SizedBox(height: 10),
-          const ListFood()
         ],
       ),
     );
